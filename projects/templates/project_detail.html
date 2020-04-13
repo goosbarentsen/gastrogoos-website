@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<br><br><br>    
+<h1>{{ project.titel }}</h1>
+<div class="row">    
+     <div class="col-sm">   
+             <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="{{ imagelist.0.image.url }}" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{{ imagelist.1.image.url }}" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="{{ imagelist.2.image.url }}" alt="Third slide">
+            </div>
+          </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        </div>
+        <div class="col-sm">
+            <h5>Ingredienten</h5>
+            <p>{{ project.ingredient|linebreaks }}</p>
+        </div>
+        
+
+        
+        
+        <div class="col-sm">
+            <h5>Recept</h5>
+            <p>{{ project.omschrijving|linebreaks }}</p>
+        </div>
+        </div>
+        
+
+      
+
+
+    </div>
+</div>
+
+
+
+
+{% endblock %}
