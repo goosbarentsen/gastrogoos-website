@@ -105,7 +105,7 @@ else:
             'NAME': 'gastro-sql',
             'USER': 'gastrogoos',
             'PASSWORD': 'Eikstraat32!',
-            'HOST': '127.0.0.1',
+            'HOST': '35.189.222.139',
             'PORT': '3306',
         }
     }
